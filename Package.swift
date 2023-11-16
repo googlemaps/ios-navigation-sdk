@@ -12,7 +12,7 @@ let package = Package(
   ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
-    .package(url: "https://github.com/dogahe/DogaheMaps", "1.0.15"..."1.0.15"),
+    .package(url: "https://github.com/googlestaging/ios-maps-sdk", "8.3.0"..."8.3.0"),
   ],
   targets: [
     // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -22,10 +22,10 @@ let package = Package(
       name: "GoogleNavigationTarget",
       dependencies: [
         "GoogleNavigation",
-        .product(name: "GoogleMaps", package: "DogaheMaps"),
-        .product(name: "GoogleMapsCore", package: "DogaheMaps"),
-        .product(name: "GoogleMapsBase", package: "DogaheMaps"),
-        .product(name: "GoogleMapsM4B", package: "DogaheMaps"),],
+        .product(name: "GoogleMaps", package: "GoogleMaps"),
+        .product(name: "GoogleMapsCore", package: "GoogleMaps"),
+        .product(name: "GoogleMapsBase", package: "GoogleMaps"),
+        .product(name: "GoogleMapsM4B", package: "GoogleMaps"),],
       path: "GoogleNavigation",
       sources: ["dummy.m"],
       resources: [
