@@ -22,10 +22,10 @@ let package = Package(
       name: "GoogleNavigationTarget",
       dependencies: [
         "GoogleNavigation",
-        .product(name: "GoogleMaps", package: "GoogleMaps"),
-        .product(name: "GoogleMapsCore", package: "GoogleMaps"),
-        .product(name: "GoogleMapsBase", package: "GoogleMaps"),
-        .product(name: "GoogleMapsM4B", package: "GoogleMaps"),],
+        .product(name: "GoogleMaps", package: "ios-maps-sdk"),
+        .product(name: "GoogleMapsCore", package: "ios-maps-sdk"),
+        .product(name: "GoogleMapsBase", package: "ios-maps-sdk"),
+        .product(name: "GoogleMapsM4B", package: "ios-maps-sdk"),],
       path: "GoogleNavigation",
       sources: ["dummy.m"],
       resources: [
