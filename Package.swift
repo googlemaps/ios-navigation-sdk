@@ -24,7 +24,7 @@ let package = Package(
       targets: ["GoogleNavigationTarget"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/googlestaging/ios-maps-sdk", "8.3.0"..."8.3.0"),
+    .package(url: "https://github.com/googlestaging/ios-maps-sdk", .exact("8.3.1")),
   ],
   targets: [
     .binaryTarget(name: "GoogleNavigation", url: "https://dl.google.com/geosdk/swiftpm/5.3.0/GoogleNavigation_3p.xcframework.zip", checksum: "67b7778bf459756febd7a8c2efa025caa0b7fd96e48d182f66543fc5d7a8bfcb"),
