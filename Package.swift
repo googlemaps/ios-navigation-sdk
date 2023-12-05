@@ -45,7 +45,7 @@ let package = Package(
       linkerSettings: [
         .linkedLibrary("z"),
         .linkedLibrary("c++"),
-        .linkedFramework("xml2"),
+        .linkedLibrary("xml2"),
         .linkedFramework("Accelerate"),
         .linkedFramework("AudioToolbox"),
         .linkedFramework("AVFoundation"),
