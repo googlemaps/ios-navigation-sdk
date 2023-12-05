@@ -43,8 +43,6 @@ let package = Package(
       ],
       publicHeadersPath: "Sources",
       linkerSettings: [
-        .linkedLibrary("z"),
-        .linkedLibrary("c++"),
         .linkedLibrary("xml2"),
         .linkedFramework("Accelerate"),
         .linkedFramework("AudioToolbox"),
