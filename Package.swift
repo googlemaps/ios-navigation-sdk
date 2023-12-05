@@ -41,7 +41,31 @@ let package = Package(
       resources: [
         .copy("Resources/GoogleNavigation.bundle")
       ],
-      publicHeadersPath: "Sources"
+      publicHeadersPath: "Sources",
+      linkerSettings: [
+        .linkedLibrary("z"),
+        .linkedLibrary("c++"),
+        .linkedFramework("xml2"),
+        .linkedFramework("Accelerate"),
+        .linkedFramework("AudioToolbox"),
+        .linkedFramework("AVFoundation"),
+        .linkedFramework("CoreData"),
+        .linkedFramework("CoreGraphics"),
+        .linkedFramework("CoreImage"),
+        .linkedFramework("CoreLocation"),
+        .linkedFramework("CoreTelephony"),
+        .linkedFramework("CoreText"),
+        .linkedFramework("GLKit"),
+        .linkedFramework("ImageIO"),
+        .linkedFramework("Metal"),
+        .linkedFramework("OpenGLES"),
+        .linkedFramework("QuartzCore"),
+        .linkedFramework("Security"),
+        .linkedFramework("SystemConfiguration"),
+        .linkedFramework("UIKit"),
+        .linkedFramework("UserNotifications"),
+        .linkedFramework("WebKit"),
+      ]
     ),
   ]
 )
