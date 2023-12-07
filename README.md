@@ -23,10 +23,10 @@ see the Navigation SDK for iOS
 1.  Follow the instructions for
     [adding package dependencies to your app in Xcode](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
 
-2.  In the prompt that appears, enter this GitHub repository:
+2.  In the "Enter Package URL" field, enter this GitHub repository:
 
     ```
-    https://github.com/googlemaps/ios-navigation-sdk.git
+    https://github.com/googlemaps/ios-navigation-sdk
     ```
 
 3.  Select the version of the Navigation SDK for iOS that you want to use. For
