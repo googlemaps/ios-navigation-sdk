@@ -74,7 +74,7 @@ This package uses Google Maps Platform services, and any use of Google Maps Plat
 
 This repository is offered via an open source license. It is not governed by the Google Maps Platform Support [Technical Support Services Guidelines](https://cloud.google.com/maps-platform/terms/tssg), the [SLA](https://cloud.google.com/maps-platform/terms/sla), or the [Deprecation Policy](https://cloud.google.com/maps-platform/terms) (however, any Google Maps Platform services used by the library remain subject to the Google Maps Platform Terms of Service).
 
-This library adheres to [semantic versioning](https://semver.org/) to indicate when backwards-incompatible changes are introduced.
+This repositiory adheres to [semantic versioning](https://semver.org/) to indicate when backwards-incompatible changes are introduced.
 
 - For issues with the Navigation SDK for iOS, please [open a support case](https://developers.google.com/maps/documentation/navigation/ios-sdk/support).
 - If you find a bug with the Swift package, please [file an issue](https://github.com/googlemaps/ios-navigation-sdk/issues) on GitHub.
