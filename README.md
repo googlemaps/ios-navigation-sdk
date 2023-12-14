@@ -38,18 +38,6 @@ see the Navigation SDK for iOS
     [instructions](https://developers.google.com/maps/documentation/navigation/ios-sdk/config#add-an-api-key-to-your-project)
     to add your API key to your app.
 
-Alternatively, you can add the following to the `dependencies` value of your
-`Package.swift` file:
-
-```
-dependencies: [
-  .package(
-    url: "https://github.com/googlemaps/ios-navigation-sdk.git",
-    .upToNextMajor(from: "5.2.0")
-  )
-]
-```
-
 ## Sample App
 
 See samples demonstrating use of the Navigation SDK for iOS on
