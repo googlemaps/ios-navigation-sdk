@@ -1,6 +1,6 @@
 // swift-tools-version: 5.5
 //
-// Copyright 2023 Google LLC
+// Copyright 2024 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -24,45 +24,33 @@ let package = Package(
       targets: ["GoogleNavigationTarget"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/googlestaging/ios-maps-sdk", .exact("8.4.0")),
+    .package(url: "https://github.com/googlemaps/ios-maps-sdk", .branch("9.0.0")),
   ],
   targets: [
-    .binaryTarget(name: "GoogleNavigation", url: "https://dl.google.com/geosdk/swiftpm/5.4.0/GoogleNavigation_3p.xcframework.zip", checksum: "0c581d9738a7e0a61d63e38184b606013f105b843bb06a8d39adba4ae1331b42"),
+    .binaryTarget(
+      name: "GoogleNavigation",
+      url: "https://dl.google.com/geosdk/swiftpm/9.0.0/GoogleNavigation_3p.xcframework.zip",
+      checksum: "4ecfc67d6ebb2e8438429216b3eaf1977844078a0c4b9b2ce985f3b5b297fda4"
+    ),
     .target(
       name: "GoogleNavigationTarget",
       dependencies: [
         "GoogleNavigation",
         .product(name: "GoogleMaps", package: "ios-maps-sdk"),
-        .product(name: "GoogleMapsCore", package: "ios-maps-sdk"),
-        .product(name: "GoogleMapsBase", package: "ios-maps-sdk"),
-        .product(name: "GoogleMapsM4B", package: "ios-maps-sdk"),],
-      path: "GoogleNavigation",
-      sources: ["GMSEmpty.m"],
-      resources: [
-        .copy("Resources/GoogleNavigation.bundle")
       ],
+      path: "Navigation",
+      sources: ["GMSEmpty.m"],
+      resources: [.copy("Resources/GoogleNavigationResources/GoogleNavigation.bundle")],
       publicHeadersPath: "Sources",
       linkerSettings: [
         .linkedLibrary("xml2"),
-        .linkedFramework("Accelerate"),
         .linkedFramework("AudioToolbox"),
         .linkedFramework("AVFoundation"),
-        .linkedFramework("CoreData"),
-        .linkedFramework("CoreGraphics"),
-        .linkedFramework("CoreImage"),
-        .linkedFramework("CoreLocation"),
-        .linkedFramework("CoreTelephony"),
-        .linkedFramework("CoreText"),
-        .linkedFramework("GLKit"),
-        .linkedFramework("ImageIO"),
+        .linkedFramework("CarPlay"),
+        .linkedFramework("MapKit"),
         .linkedFramework("Metal"),
-        .linkedFramework("OpenGLES"),
-        .linkedFramework("QuartzCore"),
-        .linkedFramework("Security"),
-        .linkedFramework("SystemConfiguration"),
-        .linkedFramework("UIKit"),
-        .linkedFramework("UserNotifications"),
         .linkedFramework("WebKit"),
+        .linkedFramework("UserNotifications"),
       ]
     ),
   ]

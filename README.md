@@ -2,15 +2,16 @@
 
 ## Description
 
-This repository contains the Swift package for the [Navigation SDK for iOS](https://developers.google.com/maps/documentation/navigation/ios-sdk). For
-additional methods of installing the Navigation SDK for iOS including CocoaPods,
-see the Navigation SDK for iOS
+This repository contains the Swift package for the
+[Navigation SDK for iOS](https://developers.google.com/maps/documentation/navigation/ios-sdk).
+For additional methods of installing the Navigation SDK for iOS including
+CocoaPods, see the Navigation SDK for iOS
 [documentation](https://developers.google.com/maps/documentation/navigation/ios-sdk/config).
 
 ## Requirements
 
--   [Xcode](https://developer.apple.com/xcode/) version 14.0 or later
--   An app targeting iOS 14 or later
+-   [Xcode](https://developer.apple.com/xcode/) version 15.0 or later
+-   An app targeting iOS 15 or later
 -   A Google Maps Platform
     [project](https://developers.google.com/maps/documentation/navigation/ios-sdk/config)
     with the Navigation SDK for iOS enabled.
@@ -52,19 +53,36 @@ and
 
 ## Contributing
 
-External contributions are not accepted for this repository, per the [Contributing guide](https://github.com/googlemaps/ios-navigation-sdk/blob/main/CONTRIBUTING.md).
+External contributions are not accepted for this repository, per the
+[Contributing guide](https://github.com/googlemaps/ios-navigation-sdk/blob/main/CONTRIBUTING.md).
 
 ## Terms of Service
 
-This package uses Google Maps Platform services, and any use of Google Maps Platform is subject to the [Terms of Service](https://cloud.google.com/maps-platform/terms).
+This package uses Google Maps Platform services, and any use of Google Maps
+Platform is subject to the
+[Terms of Service](https://cloud.google.com/maps-platform/terms).
 
 ## Support
 
-This repository is offered via an open source license. It is not governed by the Google Maps Platform Support [Technical Support Services Guidelines](https://cloud.google.com/maps-platform/terms/tssg), the [SLA](https://cloud.google.com/maps-platform/terms/sla), or the [Deprecation Policy](https://cloud.google.com/maps-platform/terms) (however, any Google Maps Platform services used by the library remain subject to the Google Maps Platform Terms of Service).
+This repository is offered via an open source license. It is not governed by the
+Google Maps Platform Support
+[Technical Support Services Guidelines](https://cloud.google.com/maps-platform/terms/tssg),
+the [SLA](https://cloud.google.com/maps-platform/terms/sla), or the
+[Deprecation Policy](https://cloud.google.com/maps-platform/terms) (however, any
+Google Maps Platform services used by the library remain subject to the Google
+Maps Platform Terms of Service).
 
-This repositiory adheres to [semantic versioning](https://semver.org/) to indicate when backwards-incompatible changes are introduced.
+This repository adheres to [semantic versioning](https://semver.org/) to
+indicate when backwards-incompatible changes are introduced.
 
-- For issues with the Navigation SDK for iOS, please [open a support case](https://developers.google.com/maps/documentation/navigation/ios-sdk/support).
-- If you find a bug with the Swift package, please [file an issue](https://github.com/googlemaps/ios-navigation-sdk/issues) on GitHub.
+-   For issues with the Navigation SDK for iOS, please
+    [open a support case](https://developers.google.com/maps/documentation/navigation/ios-sdk/support).
+-   If you find a bug with the Swift package, please
+    [file an issue](https://github.com/googlemaps/ios-navigation-sdk/issues) on
+    GitHub.
 
-If you would like to get answers to technical questions from other Google Maps Platform developers, ask through one of our [developer community channels](https://developers.google.com/maps/developer-community). You can also discuss this library on the Google Maps Platform [Discord server](https://discord.gg/hYsWbmk).
+If you would like to get answers to technical questions from other Google Maps
+Platform developers, ask through one of our
+[developer community channels](https://developers.google.com/maps/developer-community).
+You can also discuss this library on the Google Maps Platform
+[Discord server](https://discord.gg/hYsWbmk).
