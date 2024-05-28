@@ -24,7 +24,7 @@ let package = Package(
       targets: ["GoogleNavigationTarget"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/googlemaps/ios-maps-sdk", from("9.0.0")),
+    .package(url: "https://github.com/googlemaps/ios-maps-sdk", from: "9.0.0"),
   ],
   targets: [
     .binaryTarget(
