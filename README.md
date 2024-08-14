@@ -1,3 +1,5 @@
+<!--* freshness: { exempt: true } *-->
+
 # Google Navigation SDK For iOS Swift package
 
 ## Description
