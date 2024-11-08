@@ -19,12 +19,12 @@ import PackageDescription
 let package = Package(
   name: "GoogleNavigation", platforms: [.iOS(.v15)],
   products: [.library(name: "GoogleNavigation", targets: ["GoogleNavigationTarget"])],
-  dependencies: [.package(url: "https://github.com/googlemaps/ios-maps-sdk", from: "9.1.1")],
+  dependencies: [.package(url: "https://github.com/googlemaps/ios-maps-sdk", from: "9.2.0")],
   targets: [
     .binaryTarget(
       name: "GoogleNavigation",
-      url: "https://dl.google.com/geosdk/swiftpm/9.1.2/GoogleNavigation_3p.xcframework.zip",
-      checksum: "059ecdfdbb24003cc1d20526243e4d147aff01f976e510532b46346f72774fbb"
+      url: "https://dl.google.com/geosdk/swiftpm/9.2.0/GoogleNavigation_3p.xcframework.zip",
+      checksum: "e3bbaeefa48e32181819519ffac7f763cca4cb532ffa4e5f259b79dc56feee46"
     ),
     .target(
       name: "GoogleNavigationTarget",
