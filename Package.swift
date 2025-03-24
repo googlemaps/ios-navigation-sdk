@@ -21,18 +21,13 @@ let package = Package(
   products: [
     .library(
       name: "GoogleNavigation", targets: ["GoogleNavigationTarget", "GoogleNavigationSwiftTarget"])
-  ],
-  dependencies: [.package(url: "https://github.com/googlemaps/ios-maps-sdk", from: "9.3.0")],
+  ], dependencies: [.package(url: "https://github.com/googlemaps/ios-maps-sdk", from: "9.4.0")],
   targets: [
     .binaryTarget(
       name: "GoogleNavigation",
-      url: "https://dl.google.com/geosdk/swiftpm/9.3.0/GoogleNavigation_3p.xcframework.zip",
-      checksum: "5c980e23543d7470d3beb5712c72ba18e73dfcf30c0cb59cf3fd0dcb13310755"
+      url: "https://dl.google.com/geosdk/swiftpm/9.4.0/GoogleNavigation_3p.xcframework.zip",
+      checksum: "f224dafee8ae1a93ee0d07ae0dbde572e9d68b9c03531a46f0e853943189d928"
     ),
-    .target(  // This target is required to build Objective-C-only projects.
-      name: "GoogleNavigationSwiftTarget",
-      path: "NavigationSwift",
-      sources: ["Empty.swift"]),
     .target(
       name: "GoogleNavigationTarget",
       dependencies: [
@@ -53,6 +48,12 @@ let package = Package(
         .linkedFramework("WebKit"),
         .linkedFramework("UserNotifications"),
       ]
+    ),
+    .target(
+      name: "GoogleNavigationSwiftTarget",
+      path: "NavigationSwift",
+      sources: ["Empty.swift"],
+      publicHeadersPath: "Sources"
     ),
   ]
 )
