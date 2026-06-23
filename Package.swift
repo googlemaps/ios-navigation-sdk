@@ -21,12 +21,12 @@ let package = Package(
   products: [
     .library(
       name: "GoogleNavigation", targets: ["GoogleNavigationTarget", "GoogleNavigationSwiftTarget"])
-  ], dependencies: [.package(url: "https://github.com/googlemaps/ios-maps-sdk", from: "10.14.0")],
+  ], dependencies: [.package(url: "https://github.com/googlemaps/ios-maps-sdk", from: "10.13.1")],
   targets: [
     .binaryTarget(
       name: "GoogleNavigation",
-      url: "https://dl.google.com/geosdk/swiftpm/10.14.0/GoogleNavigation_3p.xcframework.zip",
-      checksum: "0b19064f6bc424de5dd1d380ec705c89f358ace2b4696de2eb83591115ca8b4e"
+      url: "https://dl.google.com/geosdk/swiftpm/10.13.1/GoogleNavigation_3p.xcframework.zip",
+      checksum: "7ba9cabc9a5238240a159689696651bfceaf76e4bebb4b69edac94f08a3ae244"
     ),
     .target(
       name: "GoogleNavigationTarget",
