@@ -4,8 +4,8 @@
 
 This repository contains the Swift package for the
 [Navigation SDK for iOS](https://developers.google.com/maps/documentation/navigation/ios-sdk).
-For additional methods of installing the Navigation SDK for iOS including
-CocoaPods, see the Navigation SDK for iOS
+For additional methods of installing the Navigation SDK for iOS,
+see the Navigation SDK for iOS
 [documentation](https://developers.google.com/maps/documentation/navigation/ios-sdk/config).
 
 ## Requirements
