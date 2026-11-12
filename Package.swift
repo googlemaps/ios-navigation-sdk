@@ -1,4 +1,4 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 5.7
 //
 // Copyright 2024 Google LLC
 //
@@ -17,16 +17,16 @@
 import PackageDescription
 
 let package = Package(
-  name: "GoogleNavigation", platforms: [.iOS(.v17)],
+  name: "GoogleNavigation", platforms: [.iOS(.v16)],
   products: [
     .library(
       name: "GoogleNavigation", targets: ["GoogleNavigationTarget", "GoogleNavigationSwiftTarget"])
-  ], dependencies: [.package(url: "https://github.com/googlemaps/ios-maps-sdk", from: "11.3.0")],
+  ], dependencies: [.package(url: "https://github.com/googlemaps/ios-maps-sdk", from: "11.1.1")],
   targets: [
     .binaryTarget(
       name: "GoogleNavigation",
-      url: "https://dl.google.com/geosdk/swiftpm/11.3.0/GoogleNavigation_3p.xcframework.zip",
-      checksum: "4ac3a8723c99df5264eea5b2836fbd4aa3f400cbfcdb71e5b69250780f7561ae"
+      url: "https://dl.google.com/geosdk/swiftpm/11.1.1/GoogleNavigation_3p.xcframework.zip",
+      checksum: "fbd6780daf01ac1dec7690096fa4a883ceb4fe3353150a7d0d143227ddc4fb41"
     ),
     .target(
       name: "GoogleNavigationTarget",
